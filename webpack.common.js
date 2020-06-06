@@ -68,7 +68,8 @@ module.exports = {
 			},
             {
                 test:/\.js$/,
-                exclude:/(node_modules|bower_components)/,//排除掉node_module目录
+				exclude:/(node_modules|bower_components)/,//排除掉node_module目录,
+				include:__dirname+'src',
                 use:{
                     loader:'babel-loader',
                     options:{
